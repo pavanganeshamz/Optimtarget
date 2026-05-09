@@ -167,7 +167,7 @@ export default function App() {
       {/* ── HEADER ── */}
       <header style={{ position: "fixed", top: 0, left: 0, width: "100%", zIndex: 50, backgroundColor: "#fff", boxShadow: headerShadow ? "0 1px 16px rgba(13,45,107,0.10)" : "none", transition: "box-shadow 0.3s" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 20px", height: 68, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <img src={{LOGO_BASE64}} alt="OptimTarget" style={{ height: 36, width: "auto" }} />
+          <img src={LOGO_BASE64} alt="OptimTarget" style={{ height: 36, width: "auto" }} />
           <nav style={{ display: "flex", alignItems: "center", gap: 28 }} className="hidden lg:flex">
             {navLinks.map(([label, id]) => (
               <button key={id} className="nav-btn" onClick={() => scrollToSection(id)}
@@ -530,7 +530,7 @@ export default function App() {
       <footer style={{ background: C.dark, padding: "60px 20px 28px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "center", marginBottom: 12 }}>
-            <img src={{LOGO_BASE64}} alt="OptimTarget" style={{ height: 38, width: "auto", filter: "brightness(0) invert(1)" }} />
+            <img src={LOGO_BASE64} alt="OptimTarget" style={{ height: 38, width: "auto" }} />
           </div>
           <p style={{ color: C.slate, fontSize: 14, marginBottom: 48 }}>Precision Amazon Marketing. Built for Sellers Who Mean Business.</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 32 }} className="footer-grid">
